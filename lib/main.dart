@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/splash_screen.dart';
+
 void main() {
   runApp(const RedesignStarbucks());
 }
@@ -10,7 +12,7 @@ class RedesignStarbucks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(),
+      home: SplashScreen(),
     );
   }
 }
