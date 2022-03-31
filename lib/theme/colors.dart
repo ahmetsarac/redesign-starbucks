@@ -14,6 +14,7 @@ class GreyColors {
   static const Color grey = Color(0xFF6F8094);
   static const Color mediumGrey = Color(0xFFC4C4C4);
   static const Color lightGrey = Color(0xFFDBDBDB);
+  static const Color inputLightGrey = Color(0xFFB4BBCB);
   static const Color softGrey = Color(0xFFF4F4F4);
 }
 

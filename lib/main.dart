@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens/splash_screen.dart';
+import 'screens/login_screen.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(const RedesignStarbucks());
@@ -11,8 +12,9 @@ class RedesignStarbucks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashScreen(),
+    return MaterialApp(
+      theme: AppTheme.appTheme,
+      home: const LoginScreen(),
     );
   }
 }
