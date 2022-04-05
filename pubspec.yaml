@@ -39,3 +39,7 @@ flutter:
           weight: 600
         - asset: assets/fonts/Inter-Bold.otf
           weight: 700
+    - family: SF Pro
+      fonts: 
+        - asset: assets/fonts/SF-Pro-Display-Bold.otf
+          weight: 700

@@ -4,6 +4,7 @@ import 'colors.dart';
 
 class AppTheme {
   static final appTheme = ThemeData(
+    primaryColor: PrimaryColors.mainGreen,
     textTheme: textTheme,
     inputDecorationTheme: inputTheme,
   );
@@ -26,6 +27,42 @@ class AppTheme {
       fontWeight: FontWeight.w600,
       fontSize: 14.0,
       color: GreyColors.inputLightGrey,
+    ),
+    headlineMedium: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w600,
+      fontSize: 20.0,
+      color: PrimaryColors.darkGreen,
+    ),
+    bodyMedium: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w500,
+      fontSize: 16.0,
+      color: Colors.white,
+    ),
+    bodyLarge: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w700,
+      fontSize: 30.0,
+      color: Colors.white,
+    ),
+    displaySmall: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w600,
+      fontSize: 14.0,
+      color: Colors.white,
+    ),
+    displayLarge: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w700,
+      fontSize: 16.0,
+      color: PrimaryColors.darkGreen,
+    ),
+    displayMedium: TextStyle(
+      fontFamily: 'SF Pro',
+      fontWeight: FontWeight.w700,
+      fontSize: 30.0,
+      color: Color(0xFF2E2D38),
     ),
   );
 

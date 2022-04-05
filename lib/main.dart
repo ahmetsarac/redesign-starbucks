@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:redesign_starbucks/screens/home_screen.dart';
 
 import 'screens/login_screen.dart';
 import 'theme/app_theme.dart';
@@ -13,8 +14,9 @@ class RedesignStarbucks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.appTheme,
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
