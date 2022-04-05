@@ -19,7 +19,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 2,
       title: Text(
         'Starbucks',
-        style: Theme.of(context).textTheme.headlineMedium,
+        style: Theme.of(context).textTheme.headline2,
       ),
       actions: [
         IconButton(

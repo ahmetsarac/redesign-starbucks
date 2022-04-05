@@ -34,20 +34,28 @@ class MoneyCard extends StatelessWidget {
               children: [
                 Text(
                   'Toplam Param',
-                  style: Theme.of(context).textTheme.bodyMedium,
+                  style: Theme.of(context).textTheme.headline5,
                 ),
                 Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('55,35 TL',
-                          style: Theme.of(context).textTheme.bodyLarge),
+                      Text(
+                        '55,35 TL',
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline1!
+                            .copyWith(color: Colors.white),
+                      ),
                       Directionality(
                         textDirection: TextDirection.rtl,
                         child: TextButton.icon(
                           icon: Image.asset('assets/icons/forward.png'),
                           label: Text(
                             'Yükleme Yap',
-                            style: Theme.of(context).textTheme.displaySmall,
+                            style: Theme.of(context)
+                                .textTheme
+                                .button!
+                                .copyWith(color: Colors.white),
                           ),
                           onPressed: () {},
                         ),

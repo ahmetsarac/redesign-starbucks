@@ -10,59 +10,41 @@ class AppTheme {
   );
 
   static const textTheme = TextTheme(
-    headlineLarge: TextStyle(
+    headline1: TextStyle(
       fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
       fontSize: 30.0,
+      fontWeight: FontWeight.w700,
       color: GreyColors.dark,
     ),
-    bodySmall: TextStyle(
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w400,
-      fontSize: 14.0,
-      color: GreyColors.darkGrey,
-    ),
-    headlineSmall: TextStyle(
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w600,
-      fontSize: 14.0,
-      color: GreyColors.inputLightGrey,
-    ),
-    headlineMedium: TextStyle(
+    headline2: TextStyle(
       fontFamily: 'Inter',
       fontWeight: FontWeight.w600,
       fontSize: 20.0,
       color: PrimaryColors.darkGreen,
     ),
-    bodyMedium: TextStyle(
+    headline5: TextStyle(
       fontFamily: 'Inter',
       fontWeight: FontWeight.w500,
       fontSize: 16.0,
       color: Colors.white,
     ),
-    bodyLarge: TextStyle(
-      fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      fontSize: 30.0,
-      color: Colors.white,
-    ),
-    displaySmall: TextStyle(
+    headline6: TextStyle(
       fontFamily: 'Inter',
       fontWeight: FontWeight.w600,
       fontSize: 14.0,
-      color: Colors.white,
+      color: GreyColors.lightGrey,
     ),
-    displayLarge: TextStyle(
+    bodyText1: TextStyle(
       fontFamily: 'Inter',
-      fontWeight: FontWeight.w700,
-      fontSize: 16.0,
-      color: PrimaryColors.darkGreen,
+      fontWeight: FontWeight.w400,
+      fontSize: 14.0,
+      color: GreyColors.darkGrey,
     ),
-    displayMedium: TextStyle(
-      fontFamily: 'SF Pro',
-      fontWeight: FontWeight.w700,
-      fontSize: 30.0,
-      color: Color(0xFF2E2D38),
+    button: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w600,
+      fontSize: 14.0,
+      color: GreyColors.darkGrey,
     ),
   );
 
@@ -84,13 +66,15 @@ class AppTheme {
       borderRadius: BorderRadius.circular(5.0),
     ),
     filled: true,
-    hintStyle: textTheme.headlineSmall,
+    hintStyle: textTheme.headline6,
     fillColor: Colors.white,
     constraints: const BoxConstraints(maxHeight: 50),
   );
 
   static final primaryButtonStyle = ButtonStyle(
-    textStyle: MaterialStateProperty.all(textTheme.headlineSmall),
+    textStyle: MaterialStateProperty.all(
+      textTheme.button!.copyWith(color: Colors.white),
+    ),
     backgroundColor: MaterialStateProperty.all(
       PrimaryColors.mainGreen,
     ),

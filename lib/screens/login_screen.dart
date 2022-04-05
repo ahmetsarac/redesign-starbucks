@@ -26,12 +26,12 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 41.32),
               Text(
                 'Welcome back!',
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: Theme.of(context).textTheme.headline1,
               ),
               const SizedBox(height: 11.0),
               Text(
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor',
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme.of(context).textTheme.bodyText1,
               ),
               const SizedBox(height: 38.0),
               const TextField(
@@ -52,7 +52,7 @@ class LoginScreen extends StatelessWidget {
                     'Forgot your password?',
                     style: Theme.of(context)
                         .textTheme
-                        .headlineSmall!
+                        .headline6!
                         .copyWith(color: GreyColors.darkGrey),
                   ),
                   onPressed: () {},
