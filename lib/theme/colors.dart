@@ -17,6 +17,7 @@ class GreyColors {
   static const Color inputLightGrey = Color(0xFFB4BBCB);
   static const Color softGrey = Color(0xFFF4F4F4);
   static const Color backgroundGrey = Color(0xFFF7F8FA);
+  static const Color buttonGrey = Color(0xFFDFE4EC);
 }
 
 class ErrorColors {

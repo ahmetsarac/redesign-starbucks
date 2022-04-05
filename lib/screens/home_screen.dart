@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/bonus_progress.dart';
 import '../widgets/bottom_nav_bar.dart';
 import '../widgets/main_app_bar.dart';
 import '../theme/colors.dart';
@@ -26,6 +27,7 @@ class HomeScreen extends StatelessWidget {
           children: const [
             MoneyCard(),
             SizedBox(height: 27.0),
+            BonusProgress(),
           ],
         ),
       ),
