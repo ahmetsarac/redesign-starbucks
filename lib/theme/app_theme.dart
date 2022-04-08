@@ -46,6 +46,19 @@ class AppTheme {
       fontSize: 14.0,
       color: GreyColors.darkGrey,
     ),
+    caption: TextStyle(
+      fontFamily: 'SF Pro',
+      fontWeight: FontWeight.w700,
+      fontSize: 16.0,
+      color: GreyColors.dark,
+    ),
+    overline: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w400,
+      fontSize: 14.0,
+      color: GreyColors.dark,
+      letterSpacing: 0,
+    ),
     button: TextStyle(
       fontFamily: 'Inter',
       fontWeight: FontWeight.w600,
