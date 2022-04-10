@@ -2,16 +2,41 @@ import 'package:flutter/material.dart';
 
 import '../theme/colors.dart';
 
-class TimePicker extends StatelessWidget {
+class TimePicker extends StatefulWidget {
   TimePicker({
     Key? key,
   }) : super(key: key);
 
-  final timeFocus = FocusNode();
-  final locationFocus = FocusNode();
+  @override
+  State<TimePicker> createState() => _TimePickerState();
+}
 
-  final timeController = TextEditingController();
+class _TimePickerState extends State<TimePicker> {
+  TimeOfDay selectedTime = TimeOfDay.now();
+
+  late final String timeHour = '${selectedTime.hour}';
+  late final String timeMinute = selectedTime.minute < 10
+      ? '0${selectedTime.minute}'
+      : '${selectedTime.minute}';
+  late final String timePeriod = selectedTime.period.name.toUpperCase();
+  late final timeString = '$timeHour:$timeMinute $timePeriod';
+
+  late final timeController = TextEditingController(text: timeString);
   final locationController = TextEditingController();
+
+  void _selectTime(BuildContext context) async {
+    final TimeOfDay? timeOfDay = await showTimePicker(
+      context: context,
+      initialTime: selectedTime,
+      initialEntryMode: TimePickerEntryMode.dial,
+    );
+    if (timeOfDay != null && timeOfDay != selectedTime) {
+      setState(() {
+        selectedTime = timeOfDay;
+        timeController.text = selectedTime.format(context);
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +76,7 @@ class TimePicker extends StatelessWidget {
                   style: Theme.of(context).textTheme.overline,
                 ),
                 TextField(
-                  focusNode: timeFocus,
+                  readOnly: true,
                   controller: timeController,
                   style: Theme.of(context)
                       .textTheme
@@ -63,8 +88,6 @@ class TimePicker extends StatelessWidget {
                         BoxConstraints.loose(const Size(100, 20)),
                     focusedBorder: InputBorder.none,
                     enabledBorder: InputBorder.none,
-                    errorBorder: InputBorder.none,
-                    disabledBorder: InputBorder.none,
                     prefixIconConstraints:
                         BoxConstraints.tight(const Size(34, 20)),
                     prefixIcon: Padding(
@@ -85,7 +108,9 @@ class TimePicker extends StatelessWidget {
                             .button!
                             .copyWith(color: PrimaryColors.darkGreen),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        _selectTime(context);
+                      },
                     ),
                   ),
                 ),
@@ -94,7 +119,6 @@ class TimePicker extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           TextField(
-            focusNode: locationFocus,
             controller: locationController,
             style: Theme.of(context)
                 .textTheme
