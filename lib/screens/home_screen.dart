@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: GreyColors.backgroundGrey,
-      appBar: const MainAppBar(),
+      appBar: const MainAppBar('Starbucks'),
       bottomNavigationBar: const BottomNavBar(),
       extendBody: true,
       floatingActionButton: FloatingActionButton(

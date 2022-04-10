@@ -56,7 +56,7 @@ class AppTheme {
       fontFamily: 'Inter',
       fontWeight: FontWeight.w400,
       fontSize: 14.0,
-      color: GreyColors.dark,
+      color: GreyColors.grey,
       letterSpacing: 0,
     ),
     button: TextStyle(

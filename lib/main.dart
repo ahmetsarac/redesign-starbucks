@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:redesign_starbucks/screens/home_screen.dart';
+import 'screens/home_screen.dart';
 
 import 'screens/login_screen.dart';
+import 'screens/order_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class RedesignStarbucks extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.appTheme,
-      home: const HomeScreen(),
+      home: const OrderScreen(),
     );
   }
 }

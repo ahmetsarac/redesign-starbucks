@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MainAppBar({
+  final String title;
+
+  const MainAppBar(
+    this.title, {
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +21,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.white,
       elevation: 2,
       title: Text(
-        'Starbucks',
+        title,
         style: Theme.of(context).textTheme.headline2,
       ),
       actions: [
