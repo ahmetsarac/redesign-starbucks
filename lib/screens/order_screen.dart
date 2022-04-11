@@ -4,6 +4,7 @@ import '../widgets/bottom_nav_bar.dart';
 import '../widgets/main_app_bar.dart';
 import '../theme/colors.dart';
 import '../widgets/time_picker.dart';
+import '../widgets/coffee_menu.dart';
 
 class OrderScreen extends StatelessWidget {
   const OrderScreen({Key? key}) : super(key: key);
@@ -30,6 +31,8 @@ class OrderScreen extends StatelessWidget {
                   height: 19,
                 ),
                 TimePicker(),
+                const SizedBox(height: 7),
+                const CoffeeMenu(),
               ],
             ),
           ),

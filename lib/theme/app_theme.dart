@@ -22,6 +22,12 @@ class AppTheme {
       fontSize: 20.0,
       color: PrimaryColors.darkGreen,
     ),
+    headline3: TextStyle(
+      fontFamily: 'Inter',
+      fontWeight: FontWeight.w700,
+      fontSize: 18.0,
+      color: GreyColors.dark,
+    ),
     headline4: TextStyle(
       fontFamily: 'Inter',
       fontWeight: FontWeight.w700,
