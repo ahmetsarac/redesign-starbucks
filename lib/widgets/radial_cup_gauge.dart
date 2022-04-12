@@ -14,7 +14,7 @@ class RadialCupGauge extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         final size = constraints.maxHeight * 170 / constraints.maxHeight;
         // 170 / constraints.maxHeight is to make arc size 170 even the constraint size bigger or smaller this solution is only for this design
-        //TODO: try to make it more customizable
+        //try to make it more customizable
         return Stack(children: [
           Positioned(
             top: 0,

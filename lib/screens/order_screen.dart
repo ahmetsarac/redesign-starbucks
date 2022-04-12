@@ -26,13 +26,13 @@ class OrderScreen extends StatelessWidget {
           },
           child: SingleChildScrollView(
             child: Column(
-              children: [
-                const SizedBox(
+              children: const [
+                SizedBox(
                   height: 19,
                 ),
                 TimePicker(),
-                const SizedBox(height: 7),
-                const CoffeeMenu(),
+                SizedBox(height: 7),
+                CoffeeMenu(),
               ],
             ),
           ),

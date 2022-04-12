@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
 class TimePicker extends StatefulWidget {
-  TimePicker({
+  const TimePicker({
     Key? key,
   }) : super(key: key);
 
