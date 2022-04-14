@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../theme/colors.dart';
+
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final bool? leadingIcon;
   final String title;
 
   const MainAppBar(
     this.title, {
+    this.leadingIcon,
     Key? key,
   }) : super(key: key);
 
@@ -19,6 +23,13 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         statusBarBrightness: Brightness.light, // For iOS (dark icons)
       ),
       backgroundColor: Colors.white,
+      leading: leadingIcon == true
+          ? IconButton(
+              icon: const Icon(Icons.arrow_back_ios_new,
+                  color: PrimaryColors.darkGreen),
+              onPressed: () {},
+            )
+          : null,
       elevation: 2,
       title: Text(
         title,
