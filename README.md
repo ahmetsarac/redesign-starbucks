@@ -1,16 +1,16 @@
-# redesign_starbucks
+# Redesign Starbucks UI
 
-A new Flutter project.
+A redesign of Starbucks app UI made with Flutter. This app is not a functional app. I was just trying to implement the UI design with Flutter.
 
-## Getting Started
+The design belongs to [Betül Üsküdar](https://twitter.com/uskusku). You should definitely check her designs on https://dribbble.com/betuluskudar
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+![ScreenShot 1](assets/images/home.gif)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![ScreenShot 1](assets/images/ss1.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![ScreenShot 2](assets/images/ss2.png)
+
+![ScreenShot 3](assets/images/ss3.png)
+
+![ScreenShot 4](assets/images/ss4.png)
