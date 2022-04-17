@@ -20,21 +20,16 @@ class OrderScreen extends StatelessWidget {
         appBar: const MainAppBar('Sipariş Yarat'),
         bottomNavigationBar: const BottomNavBar(),
         extendBody: true,
-        body: GestureDetector(
-          onTap: () {
-            FocusManager.instance.primaryFocus?.unfocus();
-          },
-          child: SingleChildScrollView(
-            child: Column(
-              children: const [
-                SizedBox(
-                  height: 19,
-                ),
-                TimePicker(),
-                SizedBox(height: 7),
-                CoffeeMenu(),
-              ],
-            ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: const [
+              SizedBox(
+                height: 19,
+              ),
+              TimePicker(),
+              SizedBox(height: 7),
+              CoffeeMenu(),
+            ],
           ),
         ),
       ),

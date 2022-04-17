@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
 class StickyBottomButton extends StatelessWidget {
-  const StickyBottomButton({Key? key}) : super(key: key);
+  final String text;
+  const StickyBottomButton(this.text, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class StickyBottomButton extends StatelessWidget {
           backgroundColor: MaterialStateProperty.all(PrimaryColors.mainGreen),
         ),
         onPressed: () {},
-        child: const Text('Öde'),
+        child: Text(text),
       ),
     );
   }

@@ -23,7 +23,7 @@ class OrderDetailScreen extends StatelessWidget {
           'Sipariş Detayı',
           leadingIcon: true,
         ),
-        bottomNavigationBar: const StickyBottomButton(),
+        bottomNavigationBar: const StickyBottomButton('Öde'),
         extendBody: true,
         body: SafeArea(
           child: SingleChildScrollView(
