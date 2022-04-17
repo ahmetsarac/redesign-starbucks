@@ -15,11 +15,12 @@ class _CoffeeItemCountState extends State<CoffeeItemCount> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 40,
       decoration: BoxDecoration(
         color: GreyColors.buttonGrey,
         borderRadius: BorderRadius.circular(4.0),
       ),
-      child: Row(children: [
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         TextButton(
             style: ButtonStyle(
               minimumSize: MaterialStateProperty.all(Size.zero),
